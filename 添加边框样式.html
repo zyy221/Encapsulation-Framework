@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<div>div</div>
+		<span>span</span>
+		<p>p</p>
+		<div>div</div>
+		<p>p</p>
+		<span>span</span>
+		<div>div</div>
+    </body>
+
+	<script>
+	var divs = document.getElementsByTagName('div');
+	var ps = document.getElementsByTagName('p');
+
+	for(var i=0; i<divs.length; i++){
+		divs[i].style.border="1px solid red";
+	}
+
+	for(var i=0; i<ps.length; i++){
+		ps[i].style.border="1px solid red";
+	}
+	</script>
+
+</html>
